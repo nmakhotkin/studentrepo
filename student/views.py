@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
-from django.core.context_processors import csrf # для загрузки файлов
+from django.core.context_processors import csrf  # для загрузки файлов
 from datetime import datetime
 
 
