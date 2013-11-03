@@ -1,0 +1,13 @@
+<%inherit file="/base.html"/>\
+<%def name="content()">
+
+%   if errors:
+      <b>${ errors }</b>
+%   endif
+
+    <form action="/accounts/login/" method="POST">
+        <input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}"/>
+        ${ form.as_table() }
+        <input type="submit">
+    </form>
+</%def>

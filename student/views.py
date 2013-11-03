@@ -1,14 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from djangomako.shortcuts import render_to_response
+from student.shortcuts import render_to_response
 from django.core.context_processors import csrf  # для загрузки файлов
 from datetime import datetime
 
 
 def home(request):
-
-    # add_user()
 
     params = {}
     params['time'] = (datetime.now().strftime('%H:%M:%S'))

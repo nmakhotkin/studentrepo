@@ -1,0 +1,7 @@
+auth:${ auth }<br>
+% if auth == '1':
+	This is you profile.
+% else:
+	Auth Error. 
+	<a href="localhost:8080/accounts/login/">Login</a>
+% endif 
