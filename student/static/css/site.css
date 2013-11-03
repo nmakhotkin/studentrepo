@@ -1,0 +1,480 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+html {
+    height: 100%;
+}
+body {
+    /*background-image: #fefcea; /* Для старых браузров */
+    background-image: -moz-linear-gradient(top, #ccccee, #15152a); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background-image: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#ccccee), color-stop(100%,#15152a));
+    /* Chrome 10+, Safari 5.1+ */
+    background-image: -webkit-linear-gradient(top, #ccccee, #15152a);
+    background-image: -o-linear-gradient(top, #ccccee, #15152a); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top, #ccccee, #15152a); /* IE10 */
+    background-image: linear-gradient(top, #ccccee, #15152a); /* CSS3 */
+    font-size: .85em;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a:link {
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, #header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+header h1, #header h1 {
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px #111;
+}
+
+#main 
+{
+    
+    padding: 20px 30px 15px 30px;
+    margin-left: 180px;
+    margin-bottom: auto;
+    top: 50px;
+    background-color: #ddd;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 5px 3px;
+    position: relative;
+}
+
+/* Path above downloads */
+#path
+{
+   position:relative;
+   display: inline;
+   height: 20px;
+}
+
+#path:hover
+{
+    
+}
+
+#path a
+{
+    text-decoration: none;
+    width: 120%;
+    color: Gray;
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+#path a:hover
+{
+    color: Red;
+}
+#path i
+{
+    font-size: 14px;
+}
+
+/* Downloads*/
+#download a
+{
+    color: Black;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+}
+#download 
+{
+    margin-bottom: 5px;
+    height: 40px;
+    width: 580px;
+    left: 0px;
+    margin-top: 5px;
+    padding-left: 40px;
+    position:relative;
+    vertical-align: middle;
+}
+#download:hover
+{
+    /*background-color: #d0d0e0;
+    /* Для WebKit (Safari, Google Chrome и т.д.) */  
+    background: -webkit-gradient(linear, left top, right top, from(#c0c0d0), to(#dddddd), color-stop(0.7, #d0d0e0));  
+    /* Для Mozilla/Gecko (Firefox и т.д.) */  
+    background: -moz-linear-gradient(left top, #c0c0d0, #dddddd 70%);  
+    background-image: -o-linear-gradient(left top, #c0c0d0, #dddddd); /* Opera 11.10+ */
+    /* Для Internet Explorer 5.5 - 7 */  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#FFc0c0d0, endColorStr=#FFdddddd, GradientType=1);  
+    /* Для Internet Explorer 8 */  
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFc0c0d0, endColorstr=#FFdddddd, GradientType=1)";
+}
+
+#delete
+{
+    border-radius: 6px;
+    position: absolute;
+    width: 30px;
+    height: 60%;
+    margin-top: -30px;
+    left:570px;
+    text-align: center;
+    background-color: #C09090;
+}
+#delete a 
+{
+    vertical-align: middle;
+    font-weight: bold;
+    height: 100%;
+    color: #555555;
+}
+#delete a:hover
+{
+    color: White;
+}
+#delete:hover
+{
+    background-color: #A00000;
+}
+#fileicon 
+{
+    position:absolute;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+    left: 0px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+#zipdir
+{
+    border-radius: 6px;
+    position: absolute;
+    width: 83px;
+    height: 55%;
+    margin-top: -30px;
+    left:630px;
+    text-align: center;
+    background-color: #407040;
+}
+
+#zipdir:hover
+{
+    background-color: #00A000;
+}
+
+#zipdir a
+{
+    vertical-align: middle;
+    font-weight: bold;
+    height: 100%;
+    color: #333333;
+}
+
+#zipdir a:hover
+{
+    color: White;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+#menu {
+	width: 12em;
+	border-right: 1px solid #000;
+	padding: 0 0 1em 0;
+	margin-bottom: 1em;
+	position: absolute;
+	top: 100px;
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;
+	background-color: #777777;
+	box-shadow: 00 5px 3px;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+	
+#menu li {
+	border-bottom: 2px solid #aaaaaa;
+	margin: 0;
+	list-style: none;
+	list-style-image: none;
+}
+	
+#menu li a {
+	display: block;
+	padding: 5px 5px 5px 0.5em;
+	border-left: 10px solid #c0c0c0;
+	border-right: 10px solid #707070;
+	background-color: #e3e3e3;
+	color: #232323;
+	text-decoration: none;
+	width: 100%;
+}
+
+html>body #menu li a {
+	width: auto;
+}
+
+#menu li a:hover {
+	border-left: 10px solid #e0e0e0;
+	border-right: 10px solid #505050;
+	background-color: #c7c7c7;
+	color: #232323;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px;
+    border: solid 1px #e8eef4;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #e8eef4;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav, 
+#menucontainer {
+    margin-top: 40px;
+}
+
+div#title {
+    display: inline;
+    float: left;
+    text-align: left;
+    margin-top: -100px;
+    margin-left: 100px;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+#logindisplay a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+#about 
+{
+    text-align: right;
+    font-size: 12px;
+    font-family: Arial;
+    position:relative;
+    margin-right: 40px;
+    margin-top: 100px;
+    color: White;
+}
