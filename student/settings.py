@@ -167,3 +167,5 @@ LOGGING = {
         },
     }
 }
+
+AUTH_PROFILE_MODULE = "student.UserProfile"
